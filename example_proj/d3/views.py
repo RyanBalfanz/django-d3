@@ -9,7 +9,8 @@ def home(request):
 
 def examples(request):
 	now = datetime.datetime.now()
-	return render_to_response('d3/examples.html', {"now": now})
+	return render_to_response('d3/examples.html')
+	# return render_to_response('d3/examples.html', {"now": now})
 
 def easter_egg(request):
 	now = datetime.datetime.now()
