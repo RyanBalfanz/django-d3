@@ -1,0 +1,14 @@
+shell -${SHELL}
+caption always "%n(%t) : %C"
+defscrollback 10000
+startup_message off
+hardstatus on
+hardstatus alwayslastline
+
+caption string "%?%F%{= Bk}%? %C%A %D %d-%m-%Y %{= kB} %t%= %?%F%{= Bk}%:%{= wk}%? %n "
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+
+screen -t bash 1 bash -c 'source ${VIRTUAL_ENV}/bin/activate; bash'
+screen -t srv 2 bash -c 'source ${VIRTUAL_ENV}/bin/activate; cd example_proj/; python manage.py runserver'
+screen -t shell 3 bash -c 'source ${VIRTUAL_ENV}/bin/activate; cd example_proj/; python manage.py shell'
