@@ -5,7 +5,7 @@
  */
 
 // var data = d3.range(10).map(Math.random);
-var data = {{ data }}[0];
+// var data = {{ data }}[0];
 
 var w = 430,
 	h = 230,

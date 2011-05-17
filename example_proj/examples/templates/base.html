@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ STATIC_URL }}/static/css/style.css" />
+	<title>{% block title %}Django-d3 Examples{% endblock %}</title>
+	{% include "d3/_d3_deps.html" %}
+</head>
+
+<body>
+	<div id="sidebar">
+		{% block sidebar %}
+		<ul>
+			<li><a href="/">Home</a></li>
+		</ul>
+		{% endblock %}
+	</div>
+
+	<div id="content">
+		{% block content %}{% endblock %}
+	</div>
+</body>
+</html>

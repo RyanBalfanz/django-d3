@@ -1,0 +1,17 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+{% extends "d3/_d3_base.html" %}
+{% block content %}
+/*
+ * A test chart.
+ */
+
+// var data = d3.range(10).map(Math.random);
+var data = {{ data }}[0];
+
+{# {% with static_url={{ STATIC_URL }} %} #}
+{#     {% d3_series_chart data=series,series %} #}
+{# {% endwith %} #}
+
+{% include "{% STATIC_PREFIX %}/static/js/charts/test_chart.js" %}
+{% endblock %}
