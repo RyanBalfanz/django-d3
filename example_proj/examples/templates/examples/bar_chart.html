@@ -1,0 +1,8 @@
+{% extends 'examples/index.html' %}
+{% load d3 %}
+{% block example_chart %}
+	<h3>Break me off a piece of that Kit-Kat Bar Chart</h3>
+	{% with series=data.series %}
+		{% d3_bar_chart data=series %}
+	{% endwith %}
+{% endblock %}

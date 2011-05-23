@@ -4,16 +4,14 @@
  * A line chart.
  */
 
-{# var data = d3.range(20).map(function(i) { #}
-{# 	return {x: i / 19, y: (Math.sin(i / 3) + 1) / 2}; #}
-{# }); #}
+// var data = d3.range(20).map(function(i) {
+// 	return {x: i / 19, y: (Math.sin(i / 3) + 1) / 2};
+// });
 
-var data = {{ data|safe }},
-	height = {{ height|default:275|safe }},
-	width = {{ width|default:445|safe }};
-	
-var w = width,
-	h = height,
+var data = {{ data|safe }};
+
+var w = 450,
+	h = 275,
 	p = 20,
 	x = d3.scale.linear().domain([0, 1]).range([0, w]),
 	y = d3.scale.linear().domain([0, 1]).range([h, 0]);
@@ -71,4 +69,3 @@ vis.selectAll("circle.line")
 	.attr("cx", function(d) { return x(d.x); })
 	.attr("cy", function(d) { return y(d.y); })
 	.attr("r", 3.5);
-{% endblock %}
