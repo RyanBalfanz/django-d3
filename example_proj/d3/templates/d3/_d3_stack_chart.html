@@ -3,6 +3,7 @@
 /*
  * A stack chart.
  */
+{% load staticfiles %}
 <h1 id='stacked_bars'>Stacked Bars</h1> 
 <div class='gallery' id='chart'> 
 	<button class='first' id='group' onclick='transitionGroup()'> 
@@ -12,12 +13,13 @@
 	Stack
 	</button>
 </div>
-<script type="text/javascript" src="{{ STATIC_URL }}/static/js/stack.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}/static/js/stack.js"></script>
+<script type="text/javascript" src="{% static %} "/static/js/stack.js" %}"></script>
 
-<link type='text/css' href='{{ STATIC_URL }}/static/css/stack.css' rel='stylesheet'/>
-<link type='text/css' href='{{ STATIC_URL }}/static/css/button.css' rel='stylesheet'/>
-<script type="text/javascript" src='{{ STATIC_URL }}/static/js/d3.layout.js?1.12.0'> </script>
-<script type="text/javascript" src='{{ STATIC_URL }}/static/js/stream_layers.js'> </script>
-<script type="text/javascript" src='{{ STATIC_URL }}/static/js/stack.js'> </script> 
+<link type='text/css' href='{% static %} "/static/css/stack.css" %}' rel='stylesheet'/>
+<link type='text/css' href='{% static %} "/static/css/button.css" %}' rel='stylesheet'/>
+
+
+<script type="text/javascript" src="{% static %} "/static/js/d3.layout.js?1.12.0" %}"></script>
+<script type="text/javascript" src="{% static %} "/static/js/stream_layers.js" %}"></script>
+
 {% endblock %}
