@@ -9,11 +9,11 @@ body {
 	stroke: #000;
 }
 .area {
-	fill: lightsteelblue;
+	fill: LightSteelBlue; 
 }
 .line, circle.area {
 	fill: none;
-	stroke: steelblue;
+	stroke: SteelBlue;
 	stroke-width: 1.5px;
 }
 circle.area {
