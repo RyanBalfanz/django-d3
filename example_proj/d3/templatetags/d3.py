@@ -5,7 +5,6 @@ import string
 from django import template
 from django.template.loader import render_to_string
 
-# from settings import STATIC_URL
 
 register = template.Library()
 
@@ -96,7 +95,7 @@ class D3SeriesDepsNode(template.Node):
 
 @register.tag(name="d3_series_chart")
 def d3_series_chart(parser, token):
-	"""docstring for d3_bar_chart"""
+	"""Template Tag for d3_series_chart (a line chart)"""
 	try:
 		# split_contents() knows not to split quoted strings.
 		bits = token.split_contents()
@@ -162,7 +161,7 @@ class D3BarNode(template.Node):
 
 @register.tag(name="d3_bar_chart")
 def d3_bar_chart(parser, token):
-	"""docstring for d3_bar_chart"""
+	"""Template Tag for d3_bar_chart (a horizontal bar chart)"""
 	try:
 		# split_contents() knows not to split quoted strings.
 		bits = token.split_contents()

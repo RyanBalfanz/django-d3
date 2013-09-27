@@ -25,7 +25,7 @@ var bars = vis.selectAll("g.bar")
 	.attr("transform", function(d, i) { return "translate(0," + y(i) + ")"; });
 
 bars.append("svg:rect")
-	.attr("fill", "steelblue")
+	.attr("fill", "SteelBlue")
 	.attr("width", x)
 	.attr("height", y.rangeBand());
 

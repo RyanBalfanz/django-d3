@@ -1,7 +1,6 @@
 {% extends 'examples/index.html' %}
 {% load d3 %}
 {% block example_chart %}
-	<h3>Mmm Pie</h3>
 	{% with series=data.series %}
 		{% d3_pie_chart data=series %}
 	{% endwith %}

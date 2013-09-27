@@ -2,8 +2,8 @@
 <html>
 <head>
 	{% load staticfiles %}
-	<link rel="stylesheet" href="{% static "/static/css/style.css" %}" />
-	<title>{% block title %}Django-d3 Examples{% endblock %}</title>
+	<link rel="stylesheet" href="{% static "/d3/static/d3/css/style.css" %}" />
+	<title>{% block title %}BigData Data Plot Examples{% endblock %}</title>
 	{% include "d3/_d3_deps.html" %}
 </head>
 
@@ -12,21 +12,16 @@
 		{% block sidebar %}
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="https://github.com/RyanBalfanz/django-d3">GitHub Repo</a></li>
+			<li><a href="https://github.com/hobsonlane/django-d3">GitHub Repo</a></li>
 		</ul>
 		{% endblock %}
 	</div>
 
 	<div id="examples_nav">
 		<dl>
-			<dt><li><a href="{% url "random-series" %}">Time Series</a></li></dt>
-				<dd>A Random Time Series</dd>
+			<dt><li><a href="{% url "line-chart" %}">Line</a></li></dt>
 			<dt><li><a href="{% url "bar-chart" %}">Bar</a></li></dt>
-				<dd>A Bar Chart</dd>
-			{# <dt><li><a href="{% url "line-chart" %}">Line</a></li></dt> #}
-			{# 	<dd>A Pie Chart</dd> #}
 			<dt><li><a href="{% url "pie-chart" %}">Pie</a></li></dt>
-				<dd>A Pie Chart</dd>
 		</dl>
 	</div>
 
