@@ -1,20 +1,10 @@
 {% extends 'base.html' %}
 {% load d3 %}
+{% load staticfiles %}
 {% block content %}
-<a href="http://www.djangoproject.com/">
-	<img src="{{ STATIC_URL }}/static/images/djangojoint107x25_grey.gif" alt="A Django joint." title="A Django joint." />
-</a>
 <div class="chart">
-	<h2>Ur Chart, Sir.</h2>
 	{% block example_chart %}
 	{% endblock %}
 </div>
-
-{# {% include 'd3/_d3_area_chart.html' %} #}
-{# {% include 'd3/_d3_column_chart.html' %} #}
-{# {% include 'd3/_d3_stack_chart.html' %} #}
-{# {% d3_test_chart '0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0' %} #}
-{# {% d3_test_chart '0.1,0.2,0.3,0.4,0.5' %} #}
-{# {% d3_test_chart '0.1,0.2' %} #}
 
 {% endblock %}

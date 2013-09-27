@@ -1,7 +1,7 @@
 {% extends 'examples/index.html' %}
 {% load d3 %}
 {% block example_chart %}
-	<h3>Time Series</h3>
+	<h3>Line</h3>
 	{% with series=data.series %}
 		{# {% d3_series_chart data=series %} #}
 		{% d3_series_chart data=series options="{'width':50,'height':100}" %}
