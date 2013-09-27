@@ -3,8 +3,7 @@
 
 ###Authors
 
-
-    [Ryan Balfanz](http://github.com/ryanbalfanz)
-    [Hobson Lane](http://github.com/hobsonlane)
+* [Ryan Balfanz](http://github.com/ryanbalfanz)
+* [Hobson Lane](http://github.com/hobsonlane)
 
 
