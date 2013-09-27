@@ -1,9 +1,10 @@
-django-d3: a simple set of django bindings for d3, inspired by django-protovis
 
-- Django: http://djangoproject.com/
-- d3: http://mbostock.github.com/d3/
-- django-protovis: http://github.com/omarish/django-protovis
+[Django](http://djangoproject.com/) bindings for (d3.js)[http://mbostock.github.com/d3/], forked from [Bryan's repo](on http://github.com/ryanbalfanz/django-d3)
 
-Project page: http://ryanbalfanz.github.com/django-d3
-GitHub page: http://github.com/ryanbalfanz/django-d3
+Authors
+-------
+
+    [Ryan Balfanz](http://github.com/ryanbalfanz)
+    [Hobson Lane](http://github.com/hobsonlane)
+
 
